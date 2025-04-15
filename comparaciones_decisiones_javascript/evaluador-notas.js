@@ -16,7 +16,6 @@ if (nota >= 0 && nota <= 100) {
   } else {
     console.log("El estudiante no aprueba");
   }
-
 } else {
   console.log("La nota ingresada no es válida. Debe estar entre 0 y 100.");
 }
