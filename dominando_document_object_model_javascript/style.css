@@ -1,0 +1,114 @@
+/* Reajusta márgenes y rellenos */
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+  }
+  body {
+    background:    #1c1c1c;
+    color:         #eee;
+    font-family:     Arial, sans-serif;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    height:          100vh;
+  }
+  /* Contenedor principal */
+  .container {
+    background:  #2a2a2a;
+    padding:       20px 30px;
+    border-radius: 8px;
+    width:         320px;
+    text-align:    center;
+  }
+  .title {
+    margin-bottom:  20px;
+    font-size:      1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  /* Mostrar contraseña */
+  .display-box {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    background:    #1f1f1f;
+    padding:         8px 10px;
+    border-radius:   6px;
+    margin-bottom:   20px;
+  }
+  .display-box input {
+    background: transparent;
+    border:     none;
+    color:    #fff;
+    width:      80%;
+    font-size:  1rem;
+  }
+  .display-box button {
+    background: none;
+    border:     none;
+    cursor:     pointer;
+    color:    #fff;
+  }
+  /* Configuración de caja */
+  .config-box {
+    background:  #2f2f2f;
+    padding:       15px;
+    border-radius: 6px;
+  }
+  /* Contenedor de rango */
+  .range-container {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    margin-bottom:   20px;
+    font-size:       0.9rem;
+  }
+  #lengthRange {
+    width:  100%;
+    margin: 0 10px;
+  }
+  /* Contenedor con casilla de verificación */
+  .checkbox-container {
+    display:        flex;
+    flex-direction: column;
+    align-items:    flex-start;
+    margin-bottom:  20px;
+  }
+  .checkbox-container label {
+    margin-bottom: 6px;
+    font-size:     0.9rem;
+  }
+  /* Contenedor de fuerza */
+  .strength-container {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    margin-bottom:   20px;
+    font-size:       0.85rem;
+  }
+  .strength-indicator {
+    display: flex;
+    gap:     5px;
+  }
+  .strength-indicator .bar {
+    width:         20px;
+    height:        6px;
+    background:  #444;
+    border-radius: 2px;
+  }
+  /* Botón de generación */
+  .generate-btn {
+    width:         100%;
+    background:  #72d572;
+    color:       #333;
+    border:        none;
+    padding:       10px 0;
+    border-radius: 4px;
+    font-weight:   bold;
+    cursor:        pointer;
+    font-size:     0.95rem;
+  }
+  .generate-btn:hover {
+    opacity: 0.9;
+  }

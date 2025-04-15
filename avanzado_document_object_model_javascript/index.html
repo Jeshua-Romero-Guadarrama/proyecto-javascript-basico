@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caja de Comentarios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Caja de Comentarios</h1>
+
+    <!-- Formulario para añadir comentarios -->
+    <form id="formComentarios">
+      <label for="comentarioInput">Escribe tu comentario:</label><br/>
+      <textarea id="comentarioInput" rows="3" cols="40" placeholder="Ingresa tu comentario aquí..."></textarea><br/><br/>
+      <button type="submit" id="btnAgregar">Agregar Comentario</button>
+    </form>
+
+    <!-- Contenedor donde se mostrarán los comentarios -->
+    <div id="contenedorComentarios"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
