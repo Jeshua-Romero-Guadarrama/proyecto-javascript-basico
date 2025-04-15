@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador de contraseñas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Generador de contraseñas</h1>
+    <!-- Mostrar la contraseña generada -->
+    <div class="display-box">
+      <input type="text" id="pantallaContrasena" readonly value="PTx1f5DaFX" />
+      <button id="botonCopiar" aria-label="Copiar contraseña" title="Copiar contraseña">
+        <img src="https://img.icons8.com/material-outlined/24/FFFFFF/copy.png" alt="Copy icon"/>
+      </button>
+    </div>
+    <!-- Configuración para la generación de contraseña -->
+    <div class="config-box">
+      <!-- Rango para la longitud de la contraseña -->
+      <div class="range-container">
+        <label for="rangoLongitud">Longitud de caracteres</label>
+        <span id="rangoValor">20</span>
+        <input 
+          type  = "range" 
+          id    = "rangoLongitud" 
+          min   = "10" 
+          max   = "30" 
+          value = "20"
+        />
+      </div>
+      <!-- Opciones de inclusión -->
+      <div class="checkbox-container">
+        <label>
+          <input type="checkbox" id="incluirMayusculas" checked />
+          Incluir letras mayúsculas
+        </label>
+        <label>
+          <input type="checkbox" id="incluirMinusculas" checked />
+          Incluir letras minúsculas
+        </label>
+        <label>
+          <input type="checkbox" id="incluirNumeros" checked />
+          Incluir números
+        </label>
+        <label>
+          <input type="checkbox" id="incluirSimbolos" />
+          Incluir símbolos
+        </label>
+      </div>
+      <!-- Indicador de fuerza -->
+      <div class="strength-container">
+        <p>Fortaleza: <span id="etiquetaFuerza">Media</span></p>
+        <div class="strength-indicator" id="barrasFuerza">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <!-- Botón para generar -->
+      <button class="generate-btn" id="botonGenerar">
+        GENERAR  →
+      </button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
