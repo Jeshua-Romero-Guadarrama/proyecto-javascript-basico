@@ -3,24 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caja de Comentarios</title>
+  <title>Caja de Comentarios Mejorada</title>
+  <!-- Vinculamos el CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="container">
-    <h1>Caja de Comentarios</h1>
-
+    <h1>Caja de Comentarios Mejorada</h1>
+    <!-- Contenedor para mostrar mensajes de error o validación -->
+    <div id="mensajeError" class="mensaje-error" style="display: none;"></div>
     <!-- Formulario para añadir comentarios -->
     <form id="formComentarios">
+      <label for="nombreInput">Nombre:</label><br/>
+      <input 
+        type="text" 
+        id="nombreInput" 
+        placeholder="Ingresa tu nombre..."
+      /><br/><br/>
       <label for="comentarioInput">Escribe tu comentario:</label><br/>
-      <textarea id="comentarioInput" rows="3" cols="40" placeholder="Ingresa tu comentario aquí..."></textarea><br/><br/>
+      <textarea 
+        id="comentarioInput" 
+        rows="3" 
+        cols="40" 
+        placeholder="Ingresa tu comentario aquí..."
+      ></textarea>
+      <!-- Contador de caracteres -->
+      <div id="caracteresRestantes"></div>
+      <br/>
       <button type="submit" id="btnAgregar">Agregar Comentario</button>
     </form>
-
     <!-- Contenedor donde se mostrarán los comentarios -->
     <div id="contenedorComentarios"></div>
   </main>
-
+  <!-- Vincular el JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
